@@ -8,4 +8,9 @@ public interface EmployeeDAO {
     public List<Employee> geyAllEmployees();
 
   public void saveEmployee(Employee employee);
+
+   public Employee getEmployee(int id);
+
+    public void deleteEmployee(int id);
+
 }
