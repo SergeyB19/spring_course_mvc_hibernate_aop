@@ -18,7 +18,7 @@ public class Mycontroller {
 
     @RequestMapping("/")
     public String showAllEmployees(Model model) {
-        List<Employee> allEmployees = employeeService.geyAllEmployees();
+        List<Employee> allEmployees = employeeService.getAllEmployees();
         model.addAttribute("allEmps", allEmployees);
         return "all-employees";
     }
